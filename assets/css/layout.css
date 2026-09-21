@@ -1,0 +1,74 @@
+/* ============================================================
+   NOVA RESTAURANT - LAYOUT
+   Page-level composition helpers shared by several pages
+   ============================================================ */
+
+/* Editorial statement block (Home section 2, About) */
+.statement { max-width: 24ch; }
+.statement__body { font-family: var(--font-display); font-size: clamp(1.75rem, 3.2vw, 2.75rem); line-height: 1.25; max-width: 22ch; }
+.statement__note { margin-top: var(--sp-6); color: var(--text-muted); max-width: 46ch; }
+@media (min-width: 900px) {
+  .statement { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-16); max-width: none; align-items: start; }
+}
+
+/* Two-column text columns */
+.columns { display: grid; gap: var(--sp-8); }
+@media (min-width: 768px) { .columns { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .columns--3 { grid-template-columns: repeat(3, 1fr); } }
+
+/* Section header with a trailing action on the same line */
+.section-bar { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--sp-4); margin-bottom: var(--sp-10); }
+
+/* Visit strip */
+.visit-grid { display: grid; gap: var(--sp-8); }
+@media (min-width: 900px) { .visit-grid { grid-template-columns: 1.2fr 1fr 1fr; gap: var(--sp-10); } }
+
+/* Page intro used by compact heroes */
+.page-intro { display: grid; gap: var(--sp-5); max-width: 52ch; }
+
+/* Sticky side panel (forms pages) */
+.with-side { display: grid; gap: var(--sp-10); }
+@media (min-width: 1024px) {
+  .with-side { grid-template-columns: 7fr 4fr; gap: var(--sp-16); align-items: start; }
+  .with-side__side { position: sticky; top: calc(var(--header-h) + var(--sp-6)); }
+}
+
+/* Menu page: category blocks */
+.menu-section + .menu-section { margin-top: var(--sp-16); }
+.menu-section__head { display: flex; align-items: baseline; gap: var(--sp-4); margin-bottom: var(--sp-8); }
+.menu-section__head h2 { font-size: clamp(1.75rem, 2.6vw, 2.25rem); }
+.menu-section__rule { flex: 1; height: 1px; background: var(--border); }
+@media (min-width: 900px) { .menu-list--two { grid-template-columns: repeat(2, 1fr); column-gap: var(--sp-16); } }
+
+/* Sticky tabs */
+.tabs { position: sticky; top: var(--header-h); scroll-margin-top: var(--header-h); z-index: var(--z-raised); background: var(--surface); border-bottom: 1px solid var(--border); }
+.tabs__list { display: flex; gap: var(--sp-6); overflow-x: auto; scrollbar-width: none; scroll-behavior: smooth; scroll-snap-type: x proximity; }
+.tabs__tab { scroll-snap-align: center; }
+.tabs__list::-webkit-scrollbar { display: none; }
+.tabs__tab { position: relative; padding: var(--sp-4) 0; font-size: var(--fs-small); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); white-space: nowrap; }
+.tabs__tab[aria-selected="true"] { color: var(--text); }
+.tabs__tab[aria-selected="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); }
+
+/* CTA row at the end of a page */
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-6); padding-block: var(--sp-12); border-top: 1px solid var(--border); }
+.cta-row h2 { font-size: clamp(1.75rem, 2.8vw, 2.5rem); max-width: 18ch; }
+
+/* Steps (verb labelled) */
+.steps { display: grid; gap: var(--sp-6); counter-reset: step; }
+@media (min-width: 900px) { .steps { grid-template-columns: repeat(3, 1fr); gap: var(--sp-8); } }
+.steps__item { border-top: 1px solid var(--border); padding-top: var(--sp-4); }
+.steps__item h3 { font-size: 1.25rem; margin-bottom: var(--sp-2); }
+.steps__item p { font-size: var(--fs-small); color: var(--text-muted); }
+
+/* Legal document */
+.legal { display: grid; gap: var(--sp-10); }
+@media (min-width: 1024px) { .legal { grid-template-columns: 1fr 3fr; gap: var(--sp-16); align-items: start; } .legal__toc { position: sticky; top: calc(var(--header-h) + var(--sp-6)); } }
+.legal__toc ol { display: grid; gap: var(--sp-3); font-size: var(--fs-small); counter-reset: toc; }
+.legal__body h2 { font-size: 1.5rem; margin-top: var(--sp-10); }
+.legal__body h2:first-child { margin-top: 0; }
+.legal__body p, .legal__body li { color: var(--text-muted); }
+.legal__body ul { list-style: disc; padding-left: var(--sp-5); display: grid; gap: var(--sp-2); margin-top: var(--sp-4); }
+
+/* 404 */
+.page-404 { display: grid; place-items: center; min-height: 70svh; text-align: center; }
+.page-404 .hero__actions { justify-content: center; }
