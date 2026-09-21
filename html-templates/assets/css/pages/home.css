@@ -1,0 +1,7 @@
+/* Home page only */
+.page-home .hero__title { max-width: 21ch; }
+.page-home .statement__body { color: var(--text); }
+.page-home .band-dark .section-head { max-width: 40ch; }
+.page-home .band-dark .section-head p { color: var(--text-on-dark); }
+.page-home .band-dark { padding-block: clamp(5rem, 12vw, 9rem); }
+.page-home .visit-grid .hours { max-width: 22rem; }

@@ -1,0 +1,4 @@
+/* Menu page */
+.page-menu .menu-list--two { display: grid; }
+.page-menu .menu-item__name { padding-right: var(--sp-2); }
+.page-menu .tabs { top: var(--header-h); }
