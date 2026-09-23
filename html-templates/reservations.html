@@ -65,7 +65,7 @@
   </nav>
   <div class="drawer__meta">
     <p data-placeholder="address">RP Nexus Centre, Jakande, Lekki, Lagos</p>
-    <p data-placeholder="hours">Tuesday to Sunday, from noon</p>
+    <p data-placeholder="opening times, client">Open Monday to Sunday</p>
     <div class="drawer__social">
       <a href="https://wa.me/2348000000000" data-placeholder="whatsapp number" aria-label="WhatsApp us"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp-logo"></use></svg></a>
       <a href="https://instagram.com/" data-placeholder="instagram handle" aria-label="NOVA on Instagram"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram-logo"></use></svg></a>
@@ -113,14 +113,6 @@
           <p class="field__error" role="alert"></p>
         </div>
         <div class="field">
-          <label for="zone">Seating</label>
-          <select data-select id="zone" name="zone">
-            <option>No preference</option>
-            <option>Quiet table</option>
-            <option>Near the window</option>
-          </select>
-        </div>
-        <div class="field">
           <label for="name">Full name</label>
           <input type="text" id="name" name="name" autocomplete="name" required>
           <p class="field__error" role="alert"></p>
@@ -128,7 +120,7 @@
         <div class="field">
           <label for="phone">Phone number</label>
           <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+234 800 000 0000" required>
-          <p class="field__hint">We confirm your table on WhatsApp.</p>
+          <p class="field__hint" data-placeholder="booking phone line, client">We confirm your table by phone or WhatsApp.</p>
           <p class="field__error" role="alert"></p>
         </div>
         <div class="field field--wide">
@@ -167,7 +159,7 @@
       <div class="card stack">
         <h2 style="font-size:1.25rem">Good to know</h2>
         <ul class="info-list">
-          <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-clock"></use></svg><span data-placeholder="hours">Tuesday to Sunday, from noon. Closed Monday.</span></li>
+          <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-clock"></use></svg><span data-placeholder="opening times, client">Open Monday to Sunday.</span></li>
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-calendar-blank"></use></svg><span data-placeholder="no-show policy">We hold your table for 15 minutes past the booking time.</span></li>
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users-three"></use></svg><span data-placeholder="group policy">Booking for a larger group? Tell us in the notes and we will plan the table.</span></li>
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-map-pin"></use></svg><span data-placeholder="address">RP Nexus Centre, Jakande, Lekki</span></li>
@@ -191,7 +183,7 @@
         <h2 class="footer__title">Visit</h2>
         <ul class="footer__list">
           <li data-placeholder="address">RP Nexus Centre, Jakande, Lekki, Lagos</li>
-          <li data-placeholder="hours">Tuesday to Sunday, from noon</li>
+          <li data-placeholder="opening times, client">Open Monday to Sunday</li>
           <li><a href="https://maps.google.com/?q=RP+Nexus+Centre+Jakande+Lekki+Lagos" data-placeholder="map link">Get directions</a></li>
         </ul>
       </div>
