@@ -23,8 +23,8 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 
 ### about.html
 - [ ] RP Nexus site URL
-- [ ] art programme and artist names
 - [ ] materials copy
+- [ ] room and art copy
 - [ ] story copy (x2)
 
 ### bar.html
@@ -55,7 +55,6 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 
 ### index.html
 - [ ] address
-- [ ] art programme copy
 - [ ] bar copy
 - [ ] capacity
 - [ ] cocktail description
@@ -72,6 +71,7 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 - [ ] phone
 - [ ] price (x4)
 - [ ] private dining copy
+- [ ] room copy
 - [ ] social video
 - [ ] story copy
 - [ ] whatsapp number
@@ -123,10 +123,19 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 
 ## Also waiting on the client
 
-- [ ] Vector logo (SVG) to replace the text wordmark in the header, drawer, footer and 404
-- [ ] Real photography: room, food, cocktails, private dining, art. The stock images in
-      `assets/images/` (dish-*, cocktail-*, bar-counter) are from Pexels and must be replaced
-- [ ] Hero video loop (the hero currently uses a still render)
-- [ ] Social video for the Lately at NOVA and bar sections (the facades have no source yet)
-- [ ] Legal wording for privacy, cookies and terms (structure only is in place)
-- [ ] Google rating and reviews (no review section on the home page until real ones exist)
+- [ ] Vector logo (SVG) to replace the text wordmark
+- [ ] Real photography: the finished room, food, cocktails, private dining. The dish and cocktail
+      images in `assets/images/` are stock (Pexels); `hero-dining-room` and `band-after-dark` are the
+      client's own renders; `room-detail`, `private-dining-*` are the client's site photos taken
+      during fit-out
+- [ ] Hero video loop
+- [ ] Social video for the Lately at NOVA and bar sections
+- [ ] Legal wording for privacy, cookies and terms
+- [ ] Google rating and reviews
+
+## Unconfirmed claims on the site (asked 2026-09-22, see the vault)
+
+- [ ] Is there a separate bar area, or is the bar inside the dining room?
+- [ ] Is the private dining room part of NOVA?
+- [ ] Seat count (the pages say forty seats)
+- [ ] Should food bowls or bulk orders by the litre be offered?

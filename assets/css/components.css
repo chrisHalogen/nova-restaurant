@@ -134,6 +134,16 @@ body.is-locked { overflow: hidden; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-8); }
 
 @media (max-width: 767px) {
+  /* Mobile pass (client feedback 2026-09-22: the phone layout read as crowded).
+     Shorter measure, tighter rhythm, and more of the photograph left visible. */
+  :root { --section-y: clamp(3rem, 8vw, 5rem); }
+  .hero__media img { object-position: 62% center; }
+  .hero__title { font-size: clamp(2.35rem, 11vw, 3rem); }
+  .hero__text { font-size: 1rem; max-width: 34ch; }
+  .section-bar { margin-bottom: var(--sp-6); }
+  .section-head p, .split__body p, .statement__note { max-width: 38ch; }
+  .split { gap: var(--sp-6); }
+  .cta-row { padding-block: var(--sp-10); }
   .hero { min-height: calc(100svh - var(--header-h) - var(--mobile-bar-h)); }
   .hero--short { min-height: calc(74svh - var(--header-h) - var(--mobile-bar-h)); }
   .hero__inner { padding-bottom: var(--sp-10); }

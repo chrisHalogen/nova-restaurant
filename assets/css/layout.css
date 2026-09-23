@@ -3,10 +3,11 @@
    Page-level composition helpers shared by several pages
    ============================================================ */
 
-/* Editorial statement block (Home section 2, About) */
-.statement { max-width: 24ch; }
-.statement__body { font-family: var(--font-display); font-size: clamp(1.75rem, 3.2vw, 2.75rem); line-height: 1.25; max-width: 22ch; }
-.statement__note { margin-top: var(--sp-6); color: var(--text-muted); max-width: 46ch; }
+/* Editorial statement block (Home section 2, About).
+   Mobile: full width. The narrow column read as a ragged, indented block. */
+.statement { max-width: none; }
+.statement__body { font-family: var(--font-display); font-size: clamp(1.9rem, 3.2vw, 2.75rem); line-height: 1.2; max-width: 18ch; }
+.statement__note { margin-top: var(--sp-5); color: var(--text-muted); max-width: 46ch; }
 @media (min-width: 900px) {
   .statement { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-16); max-width: none; align-items: start; }
 }
