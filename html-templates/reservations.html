@@ -30,8 +30,6 @@
     <nav class="nav" aria-label="Main">
       <ul class="nav__list">
         <li><a class="nav__link" href="menu.html">Menu</a></li>
-        <li><a class="nav__link" href="bar.html">Bar</a></li>
-        <li><a class="nav__link" href="private-dining.html">Private dining</a></li>
         <li><a class="nav__link" href="about.html">About</a></li>
         <li><a class="nav__link" href="visit.html">Visit</a></li>
       </ul>
@@ -58,8 +56,6 @@
   <nav aria-label="Site">
     <ul class="drawer__list">
       <li><a class="drawer__link" href="menu.html">Menu</a></li>
-      <li><a class="drawer__link" href="bar.html">Bar</a></li>
-      <li><a class="drawer__link" href="private-dining.html">Private dining</a></li>
       <li><a class="drawer__link" href="about.html">About</a></li>
       <li><a class="drawer__link" href="visit.html">Visit</a></li>
       <li><a class="drawer__link" href="reservations.html" aria-current="page">Book a table</a></li>
@@ -114,15 +110,14 @@
             <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
             <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
           </select>
-          <p class="field__hint">Eleven or more guests: see <a href="private-dining.html">private dining</a>.</p>
           <p class="field__error" role="alert"></p>
         </div>
         <div class="field">
           <label for="zone">Seating</label>
           <select data-select id="zone" name="zone">
             <option>No preference</option>
-            <option>Dining room</option>
-            <option>Bar counter</option>
+            <option>Quiet table</option>
+            <option>Near the window</option>
           </select>
         </div>
         <div class="field">
@@ -174,14 +169,9 @@
         <ul class="info-list">
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-clock"></use></svg><span data-placeholder="hours">Tuesday to Sunday, from noon. Closed Monday.</span></li>
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-calendar-blank"></use></svg><span data-placeholder="no-show policy">We hold your table for 15 minutes past the booking time.</span></li>
-          <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users-three"></use></svg><span>Groups of eleven or more are hosted in the private room.</span></li>
+          <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users-three"></use></svg><span data-placeholder="group policy">Booking for a larger group? Tell us in the notes and we will plan the table.</span></li>
           <li><svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-map-pin"></use></svg><span data-placeholder="address">RP Nexus Centre, Jakande, Lekki</span></li>
         </ul>
-      </div>
-      <div class="card stack">
-        <h2 style="font-size:1.25rem">Planning an event?</h2>
-        <p style="font-size:var(--fs-small);color:var(--text-muted)">Birthdays, engagements and business dinners are hosted in our private room.</p>
-        <p><a class="btn btn--ghost" href="private-dining.html">Private dining <svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-right"></use></svg></a></p>
       </div>
     </aside>
   </div>
@@ -209,8 +199,6 @@
         <h2 class="footer__title">Explore</h2>
         <ul class="footer__list">
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="bar.html">Bar</a></li>
-          <li><a href="private-dining.html">Private dining</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="visit.html">Visit</a></li>
           <li><a href="faq.html">Questions</a></li>

@@ -27,15 +27,6 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 - [ ] room and art copy
 - [ ] story copy (x2)
 
-### bar.html
-- [ ] age policy
-- [ ] bar hours
-- [ ] cocktail name (x2)
-- [ ] cocktail photo (x2)
-- [ ] dress code
-- [ ] price (x2)
-- [ ] social video
-
 ### cookies.html
 - [ ] legal wording, to be confirmed by the client (x2)
 
@@ -45,8 +36,8 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 - [ ] address
 - [ ] age policy
 - [ ] allergen wording
-- [ ] bar hours
 - [ ] dress code
+- [ ] group policy
 - [ ] no-show policy
 - [ ] parking
 - [ ] pricing
@@ -55,8 +46,6 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 
 ### index.html
 - [ ] address
-- [ ] bar copy
-- [ ] capacity
 - [ ] cocktail description
 - [ ] cocktail name
 - [ ] cocktail photo
@@ -64,13 +53,14 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 - [ ] dish name (x3)
 - [ ] dish photo (x3)
 - [ ] email
+- [ ] evening copy
+- [ ] group policy
 - [ ] instagram handle
 - [ ] last seating
 - [ ] map link
 - [ ] opening hours
 - [ ] phone
 - [ ] price (x4)
-- [ ] private dining copy
 - [ ] room copy
 - [ ] social video
 - [ ] story copy
@@ -78,6 +68,7 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 
 ### menu.html
 - [ ] VAT and service charge
+- [ ] alcohol policy
 - [ ] allergen wording
 - [ ] dish description (x35)
 - [ ] dish name (x35)
@@ -90,18 +81,10 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 ### privacy.html
 - [ ] legal wording, to be confirmed by the client (x2)
 
-### private-dining.html
-- [ ] cake and corkage policy
-- [ ] capacity
-- [ ] decoration policy
-- [ ] deposit policy
-- [ ] minimum spend
-- [ ] private room capacity
-- [ ] response time
-
 ### reservations.html
 - [ ] address
 - [ ] confirmation time
+- [ ] group policy
 - [ ] hours
 - [ ] no-show policy
 - [ ] whatsapp number
@@ -124,18 +107,16 @@ Find them all: `grep -rn 'data-placeholder' *.html`
 ## Also waiting on the client
 
 - [ ] Vector logo (SVG) to replace the text wordmark
-- [ ] Real photography: the finished room, food, cocktails, private dining. The dish and cocktail
-      images in `assets/images/` are stock (Pexels); `hero-dining-room` and `band-after-dark` are the
-      client's own renders; `room-detail`, `private-dining-*` are the client's site photos taken
-      during fit-out
-- [ ] Hero video loop
-- [ ] Social video for the Lately at NOVA and bar sections
+- [ ] Real photography: the finished room, food, drinks. The dish and cocktail images are stock
+      (Pexels); `hero-dining-room` and `band-after-dark` are the client's renders; `room-detail`,
+      `dining-room-*` are the client's site photos
+- [ ] Hero video loop, and social video for the Lately at NOVA section
 - [ ] Legal wording for privacy, cookies and terms
 - [ ] Google rating and reviews
 
-## Unconfirmed claims on the site (asked 2026-09-22, see the vault)
+## Confirmed by the owner 2026-09-23
 
-- [ ] Is there a separate bar area, or is the bar inside the dining room?
-- [ ] Is the private dining room part of NOVA?
-- [ ] Seat count (the pages say forty seats)
-- [ ] Should food bowls or bulk orders by the litre be offered?
+- No bar and no bar counter: drinks and cocktails are served at the table
+- No private dining room: the Bar and Private Dining pages were deleted
+- Seat count left off the site for now
+- Ordering will be by the plate, not by the litre
